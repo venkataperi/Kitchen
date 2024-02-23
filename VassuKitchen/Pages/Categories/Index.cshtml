@@ -1,5 +1,6 @@
 ﻿@page
 @model VassuKitchen.Pages.Categories.IndexModel
+@* <partial name="_Notification"/> *@
 
 <div class="container p-3">
     <div class="row pt-4">
@@ -35,12 +36,12 @@
                 <td>
                     <div class="w-75 btn-group" role="group">
                     <a asp-page="Edit" asp-route-id="@obj.Id" class="btn btn-primary mx-2">
-                        <i class="bi bi-pencil-square"></i>
+                       <i class="bi bi-plus-circle"></i>
                     </a>
 
-                <a asp-page="Danger" class="btn btn-primary mx-2">
+                    <a asp-page="Delete" asp-route-id="@obj.Id" class="btn btn-primary mx-2">
                     <i class="bi bi-trash-fill"></i>
-                </a>
+                    </a>
                         </div>
                 </td>
                 </tr>
