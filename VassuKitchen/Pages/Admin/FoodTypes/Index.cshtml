@@ -1,5 +1,5 @@
 ﻿@page
-@model VassuKitchen.Pages.Admin.Categories.IndexModel
+@model VassuKitchen.Pages.Admin.FoodTypes.IndexModel
 @* <partial name="_Notification"/> *@
 
 <div class="container p-3">
@@ -10,34 +10,31 @@
 
         <div class="col-6 text-end">
             <a asp-area="" asp-page="Create" class="btn btn-primary">
-                <i class="bi bi-plus-circle"></i>&nbsp;Create Category
-            </a>
-           
-           
-        </div>
-     
+                 
+                <i class="bi bi-plus-circle"></i>&nbsp;Create FoodType
+            </a>       
+            </div>     
     </div>
 
     <br /><br />
     <table class="table table-bordered table-striped"  style="width:100%">
         <thead>
             <tr>
-                <th>Category Name</th>
-                <th>Display Order </th>
+                <th> Name</th>
+                @* <th>Display Order </th> *@
                 <th> </th>
             </tr>
         </thead>
         <tbody>
-            @foreach(var obj in Model.Categories)
+            @foreach (var obj in Model.FoodTypes)
             {
                 <tr>
                     <td width="50%">@obj.Name</td>
-                    <td width="30%">@obj.DisplayOrder</td>                
+                @*     <td width="30%">@obj.DisplayOrder</td>     *@            
                 <td>
                     <div class="w-75 btn-group" role="group">
                     <a asp-page="Edit" asp-route-id="@obj.Id" class="btn btn-primary mx-2">
                                 <i class="bi bi-pencil-square"></i>
-                    
                     </a>
 
                     <a asp-page="Delete" asp-route-id="@obj.Id" class="btn btn-primary mx-2">

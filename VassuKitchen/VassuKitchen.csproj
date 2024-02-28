@@ -17,11 +17,11 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Pages\Customer\CatTemp\" />
+    <ProjectReference Include="..\Kitchen.DataAccess\Kitchen.DataAccess.csproj" />
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Kitchen.DataAccess\Kitchen.DataAccess.csproj" />
+    <Folder Include="Pages\Customer\" />
   </ItemGroup>
 
 </Project>
