@@ -19,7 +19,7 @@ namespace Kitchen.DataAccess.Repository.IRepository
         void Add(T entity);
         void Remove(T entity);
         void RemoveRange(IEnumerable<T> entities);
-        IEnumerable <T> GetAll();
+        IEnumerable <T> GetAll(string? includeProperties = null);
         T GetFirstOrDefault(Expression<Func<T, bool>>? filter = null);
     }
 }
