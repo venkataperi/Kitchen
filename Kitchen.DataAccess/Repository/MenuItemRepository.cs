@@ -1,6 +1,7 @@
 ﻿using Kitchen.DataAccess.Repository.IRepository;
 using Kitchen.Models;
-using VassuKitchen.Data;
+using VassuKitchen.DataAccess.Data;
+
 
 namespace Kitchen.DataAccess.Repository
 {

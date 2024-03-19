@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 
 
-namespace VassuKitchen.Data;
+namespace VassuKitchen.DataAccess.Data;
 
 public class ApplicationDbContext : IdentityDbContext
 {

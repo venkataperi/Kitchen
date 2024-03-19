@@ -6,7 +6,8 @@ using System.Linq;
 using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
-using VassuKitchen.Data;
+
+using VassuKitchen.DataAccess.Data;
 
 namespace Kitchen.DataAccess.Repository.IRepository
 {

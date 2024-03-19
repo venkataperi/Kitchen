@@ -1,13 +1,12 @@
-using Kitchen.DataAccess;
 using Kitchen.DataAccess.Repository;
 using Kitchen.DataAccess.Repository.IRepository;
 using Microsoft.EntityFrameworkCore;
-using VassuKitchen.Data;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.AspNetCore.Identity;
+using VassuKitchen.DataAccess.Data;
 
 
 var builder = WebApplication.CreateBuilder(args);
@@ -17,6 +16,7 @@ builder.Services.AddRazorPages().AddRazorRuntimeCompilation();
 builder.Services.AddDbContext<ApplicationDbContext>(options => options.UseSqlServer(
     builder.Configuration.GetConnectionString("DefaultConnection")  
     ));
+
 
 //builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true).AddEntityFrameworkStores<ApplicationDbContext>();
 

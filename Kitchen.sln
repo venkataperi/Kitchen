@@ -4,6 +4,10 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 17.8.34511.84
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VassuKitchen", "VassuKitchen\VassuKitchen.csproj", "{7B534CC7-5036-469D-8E97-41BD3BF61DCF}"
+	ProjectSection(ProjectDependencies) = postProject
+		{34B8515A-1334-40F3-BB0B-563F68D2900E} = {34B8515A-1334-40F3-BB0B-563F68D2900E}
+		{825BE1B8-9C34-4A8F-BDF3-5D0F34D081B0} = {825BE1B8-9C34-4A8F-BDF3-5D0F34D081B0}
+	EndProjectSection
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Kitchen.DataAccess", "Kitchen.DataAccess\Kitchen.DataAccess.csproj", "{3BFADAE0-F29A-401F-93F7-85572C8E2EF7}"
 EndProject

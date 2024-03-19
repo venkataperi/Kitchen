@@ -6,7 +6,7 @@ using Kitchen.DataAccess.Repository.IRepository;
 using Kitchen.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
-using VassuKitchen.Data;
+ 
 //using VassuKitchen.Model;
 
 namespace VassuKitchen.Pages.Admin.FoodTypes;
